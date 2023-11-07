@@ -4,18 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TABLE</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            margin: 10px;
+        }
+        td,th{
+            padding: 5em,1em;
+        }
+        thred tr {
+          
+            background-color: purple;
+            border: purple;
+            border-radius: 10px;
+        }
+        th{
+            background-color: rgb(180, 37, 180);
+            border-radius: 10px;
+              color: white;
+        }
+    </style>
+
 </head>
 <body>
      <h1 style="color: rebeccapurple; text-align: center;" >TIME TABLE CHART</h1>
-    <table border="1">
-       <tr style="background-color: darkmagenta; ">
-           <td>Time</td>
-           <td>Mon</td>
-           <td>Tue</td>
-           <td>Wed</td>
-           <td>Thu</td>
-           <td>Fri</td>
-       </tr>
+    <table >
+       
+       <thead>
+        <tr class="tr1"><th>Time</th> <th>Mon</th> <th>Tue</th> <th>Wed</th> <th>Thu</th> <th>Fri</th></tr>
+       </thead>
         
         <tr>
             <td style="background-color: pink;">8:30AM to 8:43AM</td>
