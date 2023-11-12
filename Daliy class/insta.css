@@ -1,0 +1,7 @@
+.insta{
+    height: 150px;
+    width: 150px;
+    border: 2px;
+    box-sizing: border-box;
+    background: radial-gradient( circle at 30% 107%, #fdf497 0%, fdf497 );
+}

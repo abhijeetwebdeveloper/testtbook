@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(69, 94, 139);
+}
+nav{
+    background-color: rgb(62, 105, 155);
+    padding: 20px 30px;
+}
+a{
+    color:white;
+    padding-left: 40px
+}
+input{
+   margin: 30px;
+}
+img{
+    height: 300px;
+    width: 250px;
+    padding-left: 40px;
+    margin-left: 10px;
+}
+b{
+    font-size: 20px;
+    margin-left: 30px;
+}
+
