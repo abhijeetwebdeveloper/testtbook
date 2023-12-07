@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(41, 63, 80);
+    display: flex;
+}
+
+h2{
+    margin: 40px;
+    font-size: 40px;
+    font-family: Arial,;
+    color: rgb(150, 130, 94);
+}
+
+header :hover{
+    color: teal;
+}
+
+/* navbar formet */
+.navbar {
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.navbar h3{
+    margin-left: 30px;
+    font-size: 25px;
+    color: rgb(144, 159, 170);
+}
+
+.navbar a{
+    color: aliceblue;
+    padding-left: 15px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+a:hover{
+       color: teal;
+}
+
+/* section (box) fomate */
+
+section{
+    background-color: rgb(41, 63, 80);
+}
+
+h1{
+    font: 2rem sans-serif;
+    text-align: center;
+    color: rgb(144, 159, 170);
+}
+
+.container p{
+    font-size: 25px;
+    color: aliceblue;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* ragiseter button */
+ button{
+    margin-left: 400px;
+    background: transparent;
+    color: aliceblue;
+    font-size: 15px;
+    padding: 30px;
+    border: solid 1px;
+    width: 200px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+a :hover{
+    background-color: aliceblue;
+    color: rgb(41, 63, 80);
+}
+
+/* box1 formet start */
+
+.box1{
+    background-color: white;
+    display: flex;
+}
+
+.container2{
+    width: 35%;
+    margin-bottom: 20px;
+
+}
+
+.container2 h5{
+    margin-top: 80px;
+    margin-left: 30px;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+.container2 img{
+    height: 250px;
+    width: 300px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.container2 a{
+    margin-left: 30px;
+    line-height: 50px;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: gray;
+    text-decoration: none;
+}
+
+
+a:hover{
+    color: teal;
+}
+
+.container2 p{
+    color: #000;
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 30px;
+    font-family: sans-serif;
+}
+
+/* footer fomate */
+
+footer{
+    background-color: rgb(41, 63, 80);
+    height: 200px;
+    display: flex;
+    margin-top: 30px;
+}
+
+small{
+    color: rgb(144, 159, 170);
+    line-height: 100px;
+    margin-left: 40px;
+}
+
+.container3{
+       margin-top: 40px;
+       margin-left: 380px;
+}
+
+.container3 a{
+    color: aliceblue;
+    padding-left: 15px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.container3 :hover{
+    color: teal;
+}

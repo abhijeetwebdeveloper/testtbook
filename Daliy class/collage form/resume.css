@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    margin-left: 20px;
+}
+img{
+    height: 200px;
+    width: 180px;
+    margin: 20px;
+}
+span{
+    font-size: 20px;
+    font-weight: 700;
+    margin: 20px;
+}
+h2{
+    margin-left: 20px;
+    color: rgb(107, 107, 209);
+}
+ul{
+    margin-left: 20px;
+}
+ol{
+    margin-left: 20px;
+}
+li{
+    margin-left: 20px;
+}
+table{
+    border: 2px solid;
+    margin-left: 20px;
+}
+th{
+    border: 2px solid;
+}
+td{
+    border: 2px solid;
+    text-align: center;
+}

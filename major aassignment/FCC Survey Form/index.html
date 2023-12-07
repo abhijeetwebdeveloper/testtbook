@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fcc Survey Form</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <!-- navbar left side content -->
+        <span class="material-symbols-outlined">deployed_code</span>
+        <nav class="navbar">
+             <p>A Pan by <a href="#">freecodecamp.org</a></p>
+          <div class="container">
+             <h1>Fcc Survey Form</h1>
+          </div>
+        </nav>
+        <button class="btn">+FOLLOW</button>
+        <!-- navbar right side content -->
+        <nav class="navbar1">
+            <a href=""><i class='bx bxs-heart-square'></i></a>
+            <button class="btn2">View Source Code</button>
+            <button class="btn3">Sign Up</button>
+            <button class="btn4">Log In</button>
+        </nav>
+    </header>
+    <!-- form container -->
+    <section class="box1">
+        <h3>freeCodeCamp Survey Form</h3>
+        <p>Thank you for taking the time to help us improve the platform</p>
+        <div class="container2">
+            <!-- start the form  -->
+            <form action="#">
+                   <label for="">Name</label><br>
+                   <input type="text" placeholder="Enter your name"><br><br>
+                   <label for="">Email</label><br>
+                   <input type="text" placeholder="Enter your name"><br><br>
+                   <label for="">Age (optional)</label>
+                   <input type="number" placeholder="Age" max="10" min="99"><br><br>
+                   <label for="">Which option best describes your current role?</label>
+                   <select name="" id="" >
+                    <option value="select current role">select current role</option>
+                    <option value="Student">Student</option>
+                    <option value="Full Time Job">Full Time Job</option>
+                    <option value="Full Time Learner">Full Time Learner</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                    <option value="Other">Other</option>
+                   </select><br><br>
+                   <label for="">Would you recommend freeCodeCamp to a friend?</label><br>
+                   <div class="container3">
+                      <input type="radio" value="Definitely" class="Definitely">Definitely <br>
+                      <input type="radio" value="Definitely" class="Definitely">Maybe <br>
+                      <input type="radio" value="Definitely" class="Definitely">Not Source <br>
+                   </div><br><br>
+                   <div class="container5">
+                    <label for="">What would you like to see improved? (Check all that apply)</label><br>
+                    <input type="checkbox" >Front-end Projects <br>
+                    <input type="checkbox" >Back-end Projects  <br>
+                    <input type="checkbox" >Data Visualization  <br>
+                    <input type="checkbox" >Challenges            <br>
+                    <input type="checkbox" >Open Source Community   <br>
+                    <input type="checkbox" > Gitter help rooms   <br>
+                    <input type="checkbox" > Videos                <br>
+                    <input type="checkbox" > City Meetups      <br>
+                    <input type="checkbox" > Wiki                  <br>
+                    <input type="checkbox" > Forum              <br>
+                    <input type="checkbox" > Additional Courses   <br>
+                   </div><br><br><br>
+                  <label for="">Any comments or suggestions?</label><br><br>
+                  <textarea name="" id="" cols="80" rows="8" placeholder="Enter your comments here..."></textarea><br><br><br>
+                  <input type="submit" class="butn">
+            </form>
+        </div>
+    </section>
+</body>
+</html>

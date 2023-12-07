@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url(images);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+header{
+    background-color: rgb(1, 1, 1);
+    height: 70px;
+    display: flex;
+}
+
+.navbar{
+    color: aliceblue;
+    padding: 10px;
+}
+
+.navbar p{
+       color: rgb(212, 28, 212);
+}
+
+.navbar a{
+    color:rgb(212, 28, 212);
+    
+}
+
+.navbar a:hover{
+    color: white;
+}
+span{
+    margin-left: 10px;
+    margin-top: 15px;
+    color: aliceblue;
+    
+}
+
+.btn{
+    height: 20px;
+    width: 60px;
+    font-size: 10px;
+    margin-top: 12px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(71, 207, 115);
+    border-radius: 5px;
+    
+}
+
+header button:hover{
+   color: aliceblue;
+}
+
+/* navbar2 right side content */
+
+.navbar1{
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+}
+
+.navbar1 i{
+    /* background-color: white; */
+    font-size: 60px;
+    color: grey;
+    margin-top: 5px;
+    margin-left: 300px;
+    z-index: -1;
+}
+
+.navbar1 i:hover{
+    background-color:black;
+    color: rgb(135, 214, 214);
+}
+
+/* this is a buttons class */
+
+.btn2{
+    height: 45px;
+    margin-top: 10px;
+    width: 140px;
+    margin-left: 10px;
+    background-color: rgb(68, 72, 87);
+    color: aliceblue;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.btn3{
+    height: 45px;
+    margin-top: 10px;
+    width: 80px;
+    margin-left: 10px;
+    background-color: rgb(71, 207, 115);
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.btn4{
+    height: 45px;
+    margin-top: 10px;
+    width: 80px;
+    margin-left: 10px;
+    background-color: rgb(68, 72, 87);
+    color: aliceblue;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.navbar1 button:hover{
+    background-color: rgb(135, 214, 214);
+    color: black;
+}
+
+/* start the section */
+
+.box1 h3{
+       text-align: center;
+       margin-top: 80px;
+       color: aliceblue;
+       font-size: 40px;
+       font-weight: 400;
+}
+
+ .box1 p{
+    text-align: center;
+    color: aliceblue;
+    font-size: 25px;
+    margin-top: 5px;
+}
+
+/* its a form container */
+
+.container2{
+    background-color: rgb(44, 44, 77);
+    width: 70%;
+    margin-left: 170px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+form{
+    color: aliceblue;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: sans-serif;
+
+}
+
+/* enter information area */
+
+.container2 input{
+    margin-top: 8px;
+    padding: 10px;
+    width: 90%;
+    border-radius: 8px;
+    font-weight: 400;
+    font: 1em sans-serif;
+}
+
+.container2 label{
+    margin-top: 10px;
+}
+
+/* redio button */
+
+.container2 select{
+    margin-top: 8px;
+    padding: 10px;
+    width: 93%;
+    border-radius: 8px;
+    font: 1em sans-serif;
+}
+
+.container3 input{
+      width: 30px;
+      height: 15px;
+      font-family: sans-serif;
+}
+
+.container5 input{
+    width: 30px;
+    height: 15px;
+    font-family: sans-serif;
+}
+
+.butn{
+    background-color: rgb(71, 207, 115);
+    margin-left: 15px;
+}
+
+
+
