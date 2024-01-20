@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.quiz-result-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz Result</title>
+</head>
+<body>
+    <div class="quiz-result-container">
+        <h1>Quiz Result</h1>
+        <div id="result-details">
+            <p><strong>Participant Name:</strong> <span id="participant-name"></span></p>
+            <p><strong>Total Time Taken:</strong> <span id="total-time"></span></p>
+            <p><strong>Total Questions:</strong> <span id="total-questions"></span></p>
+            <p><strong>Questions Attempted:</strong> <span id="attempted-questions"></span></p>
+            <p><strong>Correct Answers:</strong> <span id="correct-answers"></span></p>
+            <p><strong>Wrong Answers:</strong> <span id="wrong-answers"></span></p>
+            <p><strong>Score Percentage:</strong> <span id="score-percentage"></span></p>
+        </div>
+        <button id="start-again">Start Again</button>
+        <button id="go-to-home">Go to Home</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+    <script>
+        // JavaScript code to update quiz result details
+document.addEventListener('DOMContentLoaded', function () {
+    // Sample data (you can replace this with actual result data)
+    var quizResult = {
+        name: 'John Doe',
+        totalTime: '15 minutes',
+        totalQuestions: 20,
+        attemptedQuestions: 18,
+        correctAnswers: 15,
+        wrongAnswers: 3,
+        scorePercentage: 75
+    };
+
+    // Function to update result details on the page
+    function updateResultDetails() {
+        document.getElementById('participant-name').innerText = quizResult.name;
+        document.getElementById('total-time').innerText = quizResult.totalTime;
+        document.getElementById('total-questions').innerText = quizResult.totalQuestions;
+        document.getElementById('attempted-questions').innerText = quizResult.attemptedQuestions;
+        document.getElementById('correct-answers').innerText = quizResult.correctAnswers;
+        document.getElementById('wrong-answers').innerText = quizResult.wrongAnswers;
+        document.getElementById('score-percentage').innerText = quizResult.scorePercentage + '%';
+    }
+
+    // Call the function to update details when the page loads
+    updateResultDetails();
+
+    // Button click event to start the quiz again
+    document.getElementById('start-again').addEventListener('click', function () {
+        // Add logic to start the quiz again
+        console.log('Start the quiz again');
+    });
+
+    // Button click event to go to the home page
+    document.getElementById('go-to-home').addEventListener('click', function () {
+        // Add logic to navigate to the home page
+        console.log('Go to Home');
+    });
+});
+
+    </script>
+</body>
+</html>

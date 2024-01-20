@@ -1,0 +1,79 @@
+var currentCategory;
+var currentQuestion = 0;
+var score = 0;
+
+var questions = {
+    pipes: [
+        // ... Pipes and Cisterns questions
+    ],
+    probability: [
+        // ... Probability questions
+    ],
+    problemOnAge: [
+        // ... Problem on Age questions
+    ],
+    profitLoss: [
+        // ... Profit and Loss questions
+    ]
+};
+
+function startQuiz(category) {
+    currentCategory = category;
+    currentQuestion = 0;
+    score = 0;
+
+    // Load the first question
+    loadQuestion();
+}
+
+function loadQuestion() {
+    var questionContainer = document.getElementById('question');
+    var optionsContainer = document.getElementById('options');
+    var currentQuestionData = questions[currentCategory][currentQuestion];
+
+    questionContainer.textContent = currentQuestionData.text;
+
+    optionsContainer.innerHTML = '';
+    Object.keys(currentQuestionData.options).forEach(function (option) {
+        var button = document.createElement('button');
+        button.textContent = option + ": " + currentQuestionData.options[option];
+        button.onclick = function () { checkAnswer(option); };
+        optionsContainer.appendChild(button);
+    });
+
+    highlightSelectedOption();
+}
+
+function checkAnswer(selectedOption) {
+    var currentQuestionData = questions[currentCategory][currentQuestion];
+    if (currentQuestionData.correctOption === selectedOption) {
+        score++;
+    }
+    nextQuestion();
+}
+
+function highlightSelectedOption() {
+    var options = document.querySelectorAll('.options button');
+    options.forEach(function (option, index) {
+        option.style.backgroundColor = index === currentQuestion ? '#007BFF' : '#fff';
+        option.style.color = index === currentQuestion ? '#fff' : '#000';
+    });
+}
+
+function nextQuestion() {
+    currentQuestion++;
+
+    if (currentQuestion < questions[currentCategory].length) {
+        loadQuestion();
+    } else {
+        showResult();
+    }
+}
+
+function showResult() {
+    alert('Quiz completed! Your score: ' + score + '/' + questions[currentCategory].length);
+
+    // Reset and go back to home section
+    document.getElementById('home').style.display = 'block';
+    document.getElementById('quiz').style.display = 'none';
+}

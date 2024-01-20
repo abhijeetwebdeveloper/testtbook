@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Quiz app</title>
+</head>
+
+<body>
+    <section id="details">
+        <img src="image/testbook-logo.png" alt="">
+        <h1 id="user">Hello user</h1><br><br>
+            <p class="welcome-note">Welcome to the Quiz App, <span id="userName"></span>!</p>
+            <input type="text" id="nameInput" placeholder="Enter your Name">
+            <button onclick="enter()">Enter</button>
+        <p>You'll have 10 seconds to answer each questions </p>
+        <section id="homePage">
+            <h2>Select Categories</h2>
+            <button id="btn1" class="btn" onclick="startQuiz('pipesandcisterns')">Pipes and Cisterns</button>
+            <button id="btn2" class="btn" onclick="startQuiz('Probability')">Probability</button>
+            <button id="btn3" class="btn" onclick="startQuiz('Problemsonage')">Problems on Age</button>
+            <button id="btn4" class="btn" onclick="startQuiz('Profitandloss')">Profit and Loss</button>
+        </section>
+    </section>
+
+    <div class="quiz-page" id="quizPage" style="display: none;">
+        <div class="quiz-header">
+            <span id="timer">Timer: 0s</span>
+            <span id="score">Score: 0</span>
+        </div>
+        <div id="questionContainer">
+            <!-- Quiz questions dynamically loaded here -->
+        </div>
+        <div id="optionsContainer">
+            <!-- Quiz questions dynamically loaded here -->
+        </div>
+        <button id="next" onclick="nextQuestion()">Next Question</button>
+    </div>
+
+    <div class="quiz-result-container" style="display: none;">
+        <h1>Quiz Result</h1>
+        <div id="result-details">
+            <p><strong>Participant Name:</strong> <span id="participant-name"></span></p>
+            <p><strong>Total Time Taken:</strong> <span id="total-time"></span></p>
+            <p><strong>Total Questions:</strong> <span id="total-questions"></span></p>
+            <p><strong>Questions Attempted:</strong> <span id="attempted-questions"></span></p>
+            <p><strong>Correct Answers:</strong> <span id="correct-answers"></span></p>
+            <p><strong>Wrong Answers:</strong> <span id="wrong-answers"></span></p>
+            <p><strong>Score Percentage:</strong> <span id="score-percentage"></span></p>
+        </div>
+        <button id="start-again">Start Again</button>
+        <button id="go-to-home">Go to Home</button>
+    </div>
+    
+
+
+    <script src="quiz.js"></script>
+</body>
+
+</html>
