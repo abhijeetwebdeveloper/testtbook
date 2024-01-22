@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram logo</title>
+    <link rel="stylesheet" href="insta.css">
+</head>
+<body>
+    
+    <div id="indiadate">
+        <h1>India</h1>
+        <p id="india"></p>
+    </div>
+
+    <div id="newtime">
+        <h1>Newyork</h1>
+        <p id="newyork"></p>
+    </div>
+
+    <script>
+        var indiatime=function(){
+            document.getElementById("india").innerHTML= new Date().toLocaleString("en-US",{timeZone:'Asia/kolkata',timeStyle:'medium'});
+        }
+        // indiadate();
+        setInterval(indiatime,1000);
+
+        var newtime=function(){
+            document.getElementById("newyork").innerHTML= new Date().toLocaleString("en-US",{timeZone:'America/New_York',timeStyle:'medium'});
+        }
+        setInterval(newtime,1000);
+    </script>
+    
+</body>
+</html>

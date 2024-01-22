@@ -17,7 +17,7 @@ body{
 }
 
 img{
-    margin-left: 280px;
+    
     margin-top: 50px;
 }
 
@@ -31,7 +31,7 @@ h1{
 
 input{
     width: 55%;
-    margin-left: 100px;
+    margin-left: 60px;
     padding: 5px;
     border-radius: 7px;
     border: 1px solid black;
@@ -50,7 +50,7 @@ button{
 
 p{
     font-size: 20px;
-    margin-left: 95px;
+    margin-left: 25px;
     padding: 30px;
     color: rgb(99, 93, 93);
 }
@@ -162,7 +162,7 @@ div{
 }
 
 #quizPage{
-    background-color: wheat;
+    /* background-color: wheat; */
    width: 70%;
    height: 20%;
    margin-top: 80px;
@@ -225,3 +225,6 @@ div{
     background-color: rgb(31, 186, 214);
     color: aliceblue;
 }
+
+
+

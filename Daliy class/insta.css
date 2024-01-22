@@ -1,47 +1,30 @@
 
 
-.insta{
-    height: 150px;
-    width: 150px;
-    border: 2px;
-    box-sizing: border-box;
-    background-image:  radial-gradient( circle at 30% 107%, #fdf497 0%, #fdf497 5%,#fd5949 45%, #d6249f 60%, #285aeb 90% );
-    
-    border-radius: 35px;
-    display: grid;
-    place-items: center;
-}
 
-.innerbox{
-    width: 120px;
-    height: 120px;
-    border: 10px solid #fff;
-    border-radius: 32px;
-    display: grid;
-    place-items: center;
-    position: relative;
-    
+#indiadate{
+    background-color: rgb(21, 122, 89);
+    width: 20%;
+    height: 200px;
+    text-align: center;
+    border: 2px solid rgb(22, 231, 161);
+    border-radius: 10px;
 }
 
 
-.innerbox ::before{
-    content: '';
-    width: 45px;
-    height: 45px;
-    border: 10px solid #fff;
-    border-radius: 50%;
-    position: absolute;
+#india{
+    color: aliceblue;
 }
 
+h1{
+    color: aliceblue;
+    padding-top: 40px;
+}
 
-.innerbox ::after{
-    content: '';
-    width: 10px;
-    height: 10px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    background: #fff;
-    position: absolute;
-    top: 8px;
-    right: 10px;
+#newtime{
+    background-color: rgb(14, 83, 122);
+    width: 20%;
+    height: 200px;
+    text-align: center;
+    border: 2px solid aquamarine;
+    border-radius: 10px;
 }

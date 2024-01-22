@@ -12,9 +12,9 @@
     <section id="details">
         <img src="image/testbook-logo.png" alt="">
         <h1 id="user">Hello user</h1><br><br>
-            <p class="welcome-note">Welcome to the Quiz App, <span id="userName"></span>!</p>
-            <input type="text" id="nameInput" placeholder="Enter your Name">
-            <button onclick="enter()">Enter</button>
+        <p class="welcome-note">Welcome to the Quiz App, <span id="userName"></span>!</p>
+        <input type="text" id="nameInput" placeholder="Enter your Name">
+        <button onclick="enter()">Enter</button>
         <p>You'll have 10 seconds to answer each questions </p>
         <section id="homePage">
             <h2>Select Categories</h2>
@@ -37,23 +37,26 @@
             <!-- Quiz questions dynamically loaded here -->
         </div>
         <button id="next" onclick="nextQuestion()">Next Question</button>
+        <button id="Result" onclick="showResult()" style="display: none;">See your Result</button>
     </div>
 
     <div class="quiz-result-container" style="display: none;">
         <h1>Quiz Result</h1>
         <div id="result-details">
-            <p><strong>Participant Name:</strong> <span id="participant-name"></span></p>
-            <p><strong>Total Time Taken:</strong> <span id="total-time"></span></p>
-            <p><strong>Total Questions:</strong> <span id="total-questions"></span></p>
-            <p><strong>Questions Attempted:</strong> <span id="attempted-questions"></span></p>
-            <p><strong>Correct Answers:</strong> <span id="correct-answers"></span></p>
-            <p><strong>Wrong Answers:</strong> <span id="wrong-answers"></span></p>
-            <p><strong>Score Percentage:</strong> <span id="score-percentage"></span></p>
+            <p id="participant-name"> </p>
+            <p id="total-time"></p>
+            <p id="total-questions"></p>
+            <p id="attempted-questions"></p>
+            <p id="correct-answers"></p>
+            <p id="wrong-answers"></p>
+            <p id="score-percentage"></p>
         </div>
         <button id="start-again">Start Again</button>
         <button id="go-to-home">Go to Home</button>
     </div>
-    
+
+
+
 
 
     <script src="quiz.js"></script>
