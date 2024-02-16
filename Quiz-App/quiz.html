@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="user-details-section">
+            <img src="logo.png" alt="Logo" class="logo">
+            <p class="welcome-note">Welcome to the Quiz App, <span id="userName"></span>!</p>
+            <input type="text" id="nameInput" placeholder="Enter your name">
+            <button onclick="enter() ">Enter</button>
+        </div>
+        <div class="category-section">
+            <button onclick="startCategory('Pipes and Cisterns')">Pipes and Cisterns</button>
+            <button onclick="startCategory('Probability')">Probability</button>
+            <button onclick="startCategory('Problems on Age')">Problems on Age</button>
+            <button onclick="startCategory('Profit and Loss')">Profit and Loss</button>
+        </div>
+    </div>
+
+    <div class="quiz-page" id="quizPage" style="display: none;">
+        <div class="quiz-header">
+            <span id="timer">Timer: 0s</span>
+            <span id="score">Score: 0</span>
+        </div>
+        <div id="questionContainer">
+            <!-- Quiz questions dynamically loaded here -->
+        </div>
+        <button onclick="nextQuestion()">Next Question</button>
+    </div>
+
+    <div class="result-page" id="resultPage" style="display: none;">
+        <p id="resultUserName"></p>
+        <p id="totalTime">Total time taken: 0s</p>
+        <p id="totalQuestions">Total Questions: 0</p>
+        <p id="attemptedQuestions">Attempted: 0</p>
+        <p id="correctQuestions">Correct: 0</p>
+        <p id="wrongQuestions">Wrong: 0</p>
+        <p id="scorePercentage">Score: 0%</p>
+        <button onclick="startQuiz()">Start Again</button>
+        <button onclick="goToHome()">Go to Home</button>
+    </div>
+
+    <!-- <script src="dfd.js"></script> -->
+</body>
+</html>

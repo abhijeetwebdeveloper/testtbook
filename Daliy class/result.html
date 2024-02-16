@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quiz.css">
+    <title>Quiz App</title>
+</head>
+<body>
+    <div class="result-page" id="resultPage" onclick="showResult(event)" >
+        <p id="resultUserName" ></p>
+        <p id="totalTime">Total time taken: 0s</p>
+        <p id="totalQuestions">Total Questions: 0</p>
+        <p id="attemptedQuestions">Attempted: 0</p>
+        <p id="correctQuestions">Correct: 0</p>
+        <p id="wrongQuestions">Wrong: 0</p>
+        <p id="scorePercentage">Score: 0%</p>
+        <button onclick="startQuiz()">Start Again</button>
+        <button onclick="goToHome()">Go to Home</button>
+    </div>
+
+    <script src="quiz.js"></script>
+</body>
+</html>

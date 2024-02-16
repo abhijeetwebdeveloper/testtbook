@@ -3,11 +3,6 @@
     padding: 0;
 }
 
-body{
-    display: flex;
-    text-align: center;
-}
-
 #details{
    background-color: whitesmoke;
    width: 70%;
@@ -17,7 +12,7 @@ body{
 }
 
 img{
-    
+    margin-left: 280px;
     margin-top: 50px;
 }
 
@@ -31,7 +26,7 @@ h1{
 
 input{
     width: 55%;
-    margin-left: 60px;
+    margin-left: 100px;
     padding: 5px;
     border-radius: 7px;
     border: 1px solid black;
@@ -50,7 +45,7 @@ button{
 
 p{
     font-size: 20px;
-    margin-left: 25px;
+    margin-left: 95px;
     padding: 30px;
     color: rgb(99, 93, 93);
 }
@@ -143,7 +138,7 @@ div{
     width: 70%;
     height: 100%;
     margin-top: 80px;
-    margin-left: 95px;
+    margin-left: 180px;
 }
 
 .btn{
@@ -162,12 +157,11 @@ div{
 }
 
 #quizPage{
-    /* background-color: wheat; */
+    background-color: whitesmoke;
    width: 70%;
-   height: 20%;
+   height: 40%;
    margin-top: 80px;
    margin-left: 180px;
-   margin-bottom: 500px;
 }
 
 #timer{
@@ -175,44 +169,65 @@ div{
     color: rgb(139, 131, 131);
     font-size: 20px;
     border:  2px solid aqua;
-  
 }
 
 #score{
-    float: right;
-    font-size: 20px;
+
 }
 
-
-
-#questionContainer{
-    font-size: 20px;
-    gap: 2px;
-    width: 550px;
-    font-family:   Helvetica, ;
-}
-
-.options{
-    width: 220px;
+#ans1{
+    width: 250px;
     padding: 10px;
-    margin-left: 15px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-left: 75px;
+    margin-top: 25px;
     background: transparent;
-    color:black;
-    font-size: 15px;
-    border: 2px solid aqua;
-}
-.options:hover{
-   background-color: rgb(31, 186, 214);
-   color: white;
+    color: rgb(139, 131, 131);
+    font-size: 20px;
+    border:  2px solid aqua;
 }
 
+#ans2{
+    width: 250px;
+    padding: 10px;
+    margin-left: 75px;
+    margin-top: 25px;
+    background: transparent;
+    color: rgb(139, 131, 131);
+    font-size: 20px;
+    border:  2px solid aqua;
+}
+
+#ans3{
+    width: 250px;
+    padding: 10px;
+    margin-left: 75px;
+    margin-top: 25px;
+    background: transparent;
+    color: rgb(139, 131, 131);
+    font-size: 20px;
+    border:  2px solid aqua;
+}
+
+#ans4{
+    width: 250px;
+    padding: 10px;
+    margin-left: 75px;
+    margin-top: 25px;
+    background: transparent;
+    color: rgb(139, 131, 131);
+    font-size: 20px;
+    border:  2px solid aqua;
+}
+
+#ans1 :hover{
+    background-color: rgb(31, 186, 214);
+    color: white;
+}
 
 #next{
     width: 250px;
     padding: 10px;
-    margin-left: 4px;
+    margin-left: 215px;
     margin-top: 25px;
     background: transparent;
     color: rgb(139, 131, 131);
@@ -220,11 +235,3 @@ div{
     border:  2px solid aqua;
     margin-bottom: 50px;
 }
-
-#next:hover{
-    background-color: rgb(31, 186, 214);
-    color: aliceblue;
-}
-
-
-
